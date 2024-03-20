@@ -1,0 +1,119 @@
+.hero{
+    height:90vh;
+    background:linear-gradient(180deg, rgb(243, 152, 223), rgb(124, 120, 120) 60%);
+    display:flex;
+    width: 100%;
+    
+    
+}
+.hero-left{
+   flex:1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap:20px;
+   padding-left: 50px;
+   line-height: 1.1;
+}
+.hero-left h2{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+.hero-left p{
+    color: black;
+    font-size: 60px;
+    font-weight: 700;
+}
+.hero-hand-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.hero-hand-icon img{
+    width:65px;
+
+}
+.hero-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    width:280px;
+    height:50px;
+    border-radius: 75px;
+    background: red;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.hero-right{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width: 768px) {
+    .hero{
+        height:90vh;
+        background:linear-gradient(180deg, rgb(243, 152, 223), rgb(124, 120, 120) 60%);
+        display:flex;
+        width: 100%;
+        
+        
+    }
+    .hero-left{
+       flex:1;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       gap:20px;
+       padding-left: 50px;
+       line-height: 1.1;
+    }
+    .hero-left h2{
+        color: black;
+        font-size: 25px;
+        font-weight: 600;
+    
+    }
+    .hero-left p{
+        color: black;
+        font-size: 60px;
+        font-weight: 700;
+    }
+    .hero-hand-icon{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    
+    }
+    .hero-hand-icon img{
+        width:65px;
+    
+    }
+    .hero-latest-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:15px;
+        width:280px;
+        height:50px;
+        border-radius: 75px;
+        background: red;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .hero-right{
+        flex:1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+  }
+  
+}
+      

@@ -1,0 +1,118 @@
+.cartitems{
+    margin:20px 30px;
+    
+    
+
+}
+.cartitems hr{
+    height: 3px;
+    background: whitesmoke;
+    border: 0;
+}
+.cartitems-format-main{
+    display: grid;
+    grid-template-columns:0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0px;
+    color: rgb(24, 23, 23);
+    font-size: 18px;
+    font-weight: 600;
+    background:linear-gradient(180deg, rgb(243, 152, 223), rgb(124, 120, 120) 60%);
+
+}
+.cartitems-format{
+ font-size: 17px;
+ font-weight: 500;   
+}
+.cartitems-product-icon{
+    height: 50px;
+}
+.cartitems-remove-icon{
+    width:20px;
+    margin: 0px 40px;
+    cursor: pointer;
+    border: 2px solid rgb(23, 23, 23);
+}
+
+.cartitems-quantity{
+    width:50px;
+    height: 40px;
+    border: 2px solid rgb(23, 23, 23);
+    background: whitesmoke;
+  
+}
+.cartitems-down{
+    display: flex;
+    margin: 100px 0px;
+    background:linear-gradient(180deg, rgb(243, 152, 223), rgb(124, 120, 120) 60%);
+
+
+}
+.cartitems-total{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap:40px;
+   
+}
+.cartitems-total-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+
+}
+.cartitems-total button{
+    width: 262px;
+    height: 58px;
+    outline: none;
+    background: red;
+    color: white;
+    font-size:16px ;
+    font-weight:600 ;
+    cursor: pointer;
+
+}
+.cartitems-promocode{
+    flex:1;
+    font-size: 16px;
+    font-weight: 500;
+   
+}
+.cartitems-promocode p{
+    color: rgb(33, 32, 32);
+}
+.cartitems-promobox{
+    width:504px;
+    margin-top: 15px;
+    padding-left: 20px;
+    height: 58px;
+    background: rgb(232, 220, 220);
+}
+.cartitems-promobox input{
+    border:none;
+    outline: none;
+    background: transparent;
+    font-size:16px;
+    width:330px;
+    height:50px;
+}
+.cartitems-promobox button{
+    width:170px;
+    height: 58px;
+    font-size: 16px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+.empty-cart-message{
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+   
+    margin-bottom: 100px;
+    height: 500px;
+    background:linear-gradient(180deg, rgb(243, 152, 223), rgb(124, 120, 120) 60%);
+   
+}
