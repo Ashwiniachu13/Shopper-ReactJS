@@ -9,6 +9,7 @@ const ProductDisplay=(props)=>{
 
     const {addToCart}=useContext(ShopContext);
 
+
     return(
         <div className="productdisplay">
 <div className="productdisplay-left">
@@ -40,14 +41,8 @@ const ProductDisplay=(props)=>{
 A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves.
 </div>
 <div className="productdisplay-right-size">
-    <h1>Select Size</h1>
-    <div className="productdisplay-right-size">
-        <div>S</div>
-        <div>M</div>
-        <div>L</div>
-        <div>XL</div>
-        <div>XXL</div>
-    </div>
+   
+   
 </div>
 <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
 

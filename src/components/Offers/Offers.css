@@ -5,7 +5,7 @@
     margin:auto;
     padding: 0px 140px;
     margin-top: 200px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     background:linear-gradient(180deg, rgb(224, 161, 224), gray 60%) ;
 }
 .offers-left{
@@ -49,3 +49,29 @@
    
   
 }
+@media (min-width: 768px) {
+    .offers {
+      flex-direction: row; /* Change flex direction to horizontal layout on larger screens */
+      align-items: flex-start; /* Align content to the top */
+    }
+  
+    .offers-left {
+      padding: 40px; /* Adjust padding for larger screens */
+    }
+  
+    .offers-left h1 {
+      font-size: 50px; /* Adjust font size for larger screens */
+    }
+  
+    .offers-left p {
+      font-size: 20px; /* Adjust font size for larger screens */
+    }
+  
+    .offers-left button {
+      margin-top: 40px; /* Adjust margin for larger screens */
+    }
+  
+    .offers-right {
+      padding-top: 40px; /* Adjust padding for larger screens */
+    }
+  }

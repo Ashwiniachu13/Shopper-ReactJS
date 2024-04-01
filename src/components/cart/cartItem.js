@@ -2,19 +2,22 @@ import React, { useContext } from 'react'
 import './cartItem.css'
 import { ShopContext } from '../../context/ShopContext'
 import remove_icon from '../Assets/cart_cross_icon.png'
+import emptycart from '../Assets/empty cart.gif'
 
 const CartItem=()=>{
-const {getTotalCartAmount, all_product,cartItems,removeFromCart}=useContext(ShopContext);
+const {getTotalCartAmount, all_product,cartItems,removeFromCart, updateCartItemQuantity}=useContext(ShopContext);
 
 // check if cart is empty
 const isCartEmpty=Object.values(cartItems).every(quantity=>quantity===0);
 
     return(
-
         <div className="cartitems">
             {isCartEmpty?(
                 <div className='empty-cart-message'>
                     <p>Your cart is empty</p>
+                  
+                        <img  className="empty" src={emptycart}/>
+                        
                     </div>
             ):(
                 <React.Fragment>
@@ -35,12 +38,17 @@ const isCartEmpty=Object.values(cartItems).every(quantity=>quantity===0);
                     <img src={e.image} alt="" className='carticon-product-icon'/>
                     <p>{e.name}</p>
                     <p>${e.new_price}</p>
-                    <button className='cartitems-quantity'>{cartItems[e.id]}</button>
+                    <div className="cartitems-quantity-controls">
+                                            <button onClick={() => updateCartItemQuantity(e.id, cartItems[e.id] - 1)}>-</button>
+                                            <button>{cartItems[e.id]}</button>
+                                            <button onClick={() => updateCartItemQuantity(e.id, cartItems[e.id] + 1)}>+</button>
+                                        </div>
                     <p>${e.new_price*cartItems[e.id]}</p>
                     <img className='cartitems-remove-icon' src={remove_icon} onClick={()=>{removeFromCart(e.id)}} alt=""/>
                             </div>
                             <hr/>
              </div> 
+        
              );
             }
             return null;
@@ -57,31 +65,27 @@ const isCartEmpty=Object.values(cartItems).every(quantity=>quantity===0);
                     <p>Subtotal</p>
                     <p>${getTotalCartAmount()}</p>
                 </div>
-                <hr/>
+              
                 <div className='cartitems-total-item'>
                     <p>Shipping Fee</p>
                     <p>Free</p>
                 </div>
-                <hr/>
+               
                 <div className='cartitems-total-item'>
                     <h3>Total</h3>
                     <h3>${getTotalCartAmount()}</h3>
                 </div>
             </div>
-            <button>PROCEED TO CHECKOUT</button>
-        </div>
-        <div className='cartitems-promocode'>
-            <p>If you have a promo code Enter it here</p>
-            <div className='cartitems-promobox'>
-                <input type='text' placeholder='promo code'/>
-                <button>Submit</button>
-
-            </div>
+        
         </div>
      </div>
+     
      </React.Fragment>
             )}
+             
     </div>
+   
+
     )
     }
     

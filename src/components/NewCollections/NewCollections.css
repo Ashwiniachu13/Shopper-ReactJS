@@ -30,10 +30,24 @@
 }
 
 .item-container img{
-    max-width: 70%;
+    width: 70%;
     height: auto;
     display: flex;
   
    
 }
-
+@media (max-width: 768px) {
+    .new-collections h1 {
+      font-size: 24px; /* Adjust font size for smaller screens */
+    }
+  
+    .collections{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:60px;
+        margin-left: 50px;
+        margin-right: 50px;
+        
+    }
+  }

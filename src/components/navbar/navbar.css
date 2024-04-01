@@ -77,3 +77,42 @@ background: red;
 color: white;
 }
 
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .nav-menu {
+      flex-direction: column; /* Stack menu items vertically on smaller screens */
+      gap: 10px; /* Adjust gap between menu items for smaller screens */
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  
+    .nav-menu li {
+      align-self: flex-start; /* Align menu items to the start on smaller screens */
+    }
+  
+    .nav-menu hr {
+      display: none; /* Hide menu item separator on smaller screens */
+    }
+  
+    .nav-login-cart {
+      justify-content: center; /* Center login/cart section on smaller screens */
+      gap: 10px; /* Adjust gap between elements for smaller screens */
+    }
+  
+    .nav-login-cart button {
+      width: 100px; /* Adjust button width for smaller screens */
+      height: 35px; /* Adjust button height for smaller screens */
+      font-size: 12px; /* Adjust font size for smaller screens */
+    }
+  
+    .nav-cart-count {
+      width: 15px; /* Adjust width for smaller screens */
+      height: 15px; /* Adjust height for smaller screens */
+      font-size: 10px; /* Adjust font size for smaller screens */
+      margin-top: -25px; /* Adjust margin for smaller screens */
+      margin-left: -30px; /* Adjust margin for smaller screens */
+    }
+  }

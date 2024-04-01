@@ -85,7 +85,26 @@
     background: red;
     margin-bottom: 10px;
     border: none;
+    border-radius: 10px;
     outline: none;
     cursor: pointer;
 
 }
+@media (min-width: 768px) {
+    .productdisplay {
+      margin: 0px 150px; /* Reset margin for larger screens */
+    }
+  
+    .productdisplay-left {
+      gap: 17px; /* Reset gap between elements for larger screens */
+    }
+  
+    .productdisplay-main-img {
+      width: 300px; /* Reset main image width for larger screens */
+      height: 350px; /* Reset main image height for larger screens */
+    }
+  
+    .productdisplay-right {
+      margin: 0px 70px; /* Reset margin for larger screens */
+    }
+  }
